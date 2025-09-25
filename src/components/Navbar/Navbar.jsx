@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className="navbar inter-font md:py-4 md:px-10 bg-white max-w-[1280px] mx-auto">
+        <div className="navbar inter-font md:py-4 md:px-6 bg-white max-w-[1280px] mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

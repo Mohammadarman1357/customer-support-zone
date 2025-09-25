@@ -3,7 +3,7 @@
     "id": "#1001",
     "title": "Login Issue",
     "description": "Customer unable to log into the account using registered email.",
-    "customer": "John Smith",
+    "customer": "Arman",
     "priority": "HIGH PRIORITY",
     "status": "Open",
     "createdAt": "2025-09-01"
@@ -11,8 +11,8 @@
   {
     "id": "#1002",
     "title": "Payment Failed",
-    "description": "Payment gateway error during checkout using credit card.",
-    "customer": "Sophia Johnson",
+    "description": "Customer's payment failed due to gateway timeout on checkout page.",
+    "customer": "Sophia",
     "priority": "CRITICAL PRIORITY",
     "status": "In Progress",
     "createdAt": "2025-09-02"
@@ -20,8 +20,8 @@
   {
     "id": "#1003",
     "title": "App Crash on Startup",
-    "description": "Mobile app crashes immediately after launching on iOS devices.",
-    "customer": "Michael Brown",
+    "description": "Application crashes instantly whenever user tries to open on iOS.",
+    "customer": "Michael",
     "priority": "HIGH PRIORITY",
     "status": "Open",
     "createdAt": "2025-09-03"
@@ -29,8 +29,8 @@
   {
     "id": "#1004",
     "title": "Password Reset Email Not Received",
-    "description": "Customer did not get password reset email despite multiple attempts.",
-    "customer": "Emily Davis",
+    "description": "Password reset email never arrived although requested several times.",
+    "customer": "Emily",
     "priority": "MEDIUM PRIORITY",
     "status": "Resolved",
     "createdAt": "2025-09-04"
@@ -38,8 +38,8 @@
   {
     "id": "#1005",
     "title": "Refund Request Pending",
-    "description": "Refund request for order #45673 still not processed after 7 days.",
-    "customer": "Daniel Wilson",
+    "description": "Refund request for cancelled order is pending without final approval.",
+    "customer": "Daniel",
     "priority": "HIGH PRIORITY",
     "status": "In Progress",
     "createdAt": "2025-09-05"
@@ -47,8 +47,8 @@
   {
     "id": "#1006",
     "title": "Product Not Delivered",
-    "description": "Customer claims order was marked delivered but item not received.",
-    "customer": "Olivia Martinez",
+    "description": "Order marked delivered in system but customer says item not received.",
+    "customer": "Olivia",
     "priority": "CRITICAL PRIORITY",
     "status": "Open",
     "createdAt": "2025-09-06"
@@ -56,8 +56,8 @@
   {
     "id": "#1007",
     "title": "Slow Website Performance",
-    "description": "Website loading extremely slow during peak hours.",
-    "customer": "James Anderson",
+    "description": "Website response time is extremely slow especially during heavy traffic.",
+    "customer": "Anderson",
     "priority": "MEDIUM PRIORITY",
     "status": "In Progress",
     "createdAt": "2025-09-07"
@@ -65,8 +65,8 @@
   {
     "id": "#1008",
     "title": "Subscription Not Renewed",
-    "description": "Auto-renewal for premium subscription failed unexpectedly.",
-    "customer": "Isabella Thomas",
+    "description": "Customer's subscription renewal failed automatically without notification.",
+    "customer": "Thomas",
     "priority": "HIGH PRIORITY",
     "status": "Resolved",
     "createdAt": "2025-09-08"
@@ -74,8 +74,8 @@
   {
     "id": "#1009",
     "title": "Incorrect Billing",
-    "description": "Customer charged twice for the same order #56721.",
-    "customer": "William Taylor",
+    "description": "Customer charged twice for the same order and wants refund immediately.",
+    "customer": "William",
     "priority": "CRITICAL PRIORITY",
     "status": "Open",
     "createdAt": "2025-09-09"
@@ -83,8 +83,8 @@
   {
     "id": "#1010",
     "title": "Account Locked",
-    "description": "Multiple failed login attempts locked customer’s account.",
-    "customer": "Mia Moore",
+    "description": "Too many failed login attempts caused account to be locked suddenly.",
+    "customer": "Mia Moo",
     "priority": "HIGH PRIORITY",
     "status": "Closed",
     "createdAt": "2025-09-10"
@@ -92,8 +92,8 @@
   {
     "id": "#1011",
     "title": "Delivery Address Not Updated",
-    "description": "Customer updated address but old address used for shipping.",
-    "customer": "Benjamin Harris",
+    "description": "Updated delivery address ignored and old address used for shipment.",
+    "customer": "Harris",
     "priority": "MEDIUM PRIORITY",
     "status": "Open",
     "createdAt": "2025-09-11"
@@ -101,8 +101,8 @@
   {
     "id": "#1012",
     "title": "Feature Request",
-    "description": "Customer requested dark mode feature in the mobile app.",
-    "customer": "Charlotte Clark",
+    "description": "Customer requested a dark mode option as feature in mobile application.",
+    "customer": "Charlotte",
     "priority": "LOW PRIORITY",
     "status": "Open",
     "createdAt": "2025-09-12"
@@ -110,8 +110,8 @@
   {
     "id": "#1013",
     "title": "Incorrect Product Received",
-    "description": "Customer received the wrong product in the order.",
-    "customer": "Ethan White",
+    "description": "Wrong product delivered in package instead of item originally ordered.",
+    "customer": "Ethan",
     "priority": "HIGH PRIORITY",
     "status": "In Progress",
     "createdAt": "2025-09-13"
@@ -119,7 +119,7 @@
   {
     "id": "#1014",
     "title": "Mobile App Freezes",
-    "description": "App freezes when navigating to profile page.",
+    "description": "App freezes whenever user navigates to profile section or settings.",
     "customer": "Ava Lewis",
     "priority": "MEDIUM PRIORITY",
     "status": "Open",
@@ -128,8 +128,8 @@
   {
     "id": "#1015",
     "title": "Refund Not Processed",
-    "description": "Customer requested refund for cancelled subscription, still not received.",
-    "customer": "Liam Walker",
+    "description": "Customer refund for cancelled subscription still pending not processed.",
+    "customer": "Walker",
     "priority": "CRITICAL PRIORITY",
     "status": "In Progress",
     "createdAt": "2025-09-15"
