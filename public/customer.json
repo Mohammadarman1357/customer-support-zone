@@ -28,7 +28,7 @@
   },
   {
     "id": "#1004",
-    "title": "Password Reset Email Not Received",
+    "title": "Password Reset Email",
     "description": "Password reset email never arrived although requested several times.",
     "customer": "Emily",
     "priority": "MEDIUM PRIORITY",

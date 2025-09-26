@@ -1,8 +1,17 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import TicketCard from '../TicketCard/TicketCard';
+import TaskCard from '../TaskCard/TaskCard';
+import ResolvedTask from '../ResolvedTask/ResolvedTask';
 
-const CustomerCard = ({ customerPromise }) => {
+const CustomerCard = ({ customerPromise, setAvailableProgress, availableProgress, selectedTask, setSelectedTask, completeTask, resolvedTask, setResolvedTask, removeData }) => {
     const customerData = use(customerPromise);
+    const [ticketData, setTicketData] = useState(customerData);
+
+    const removeTicket = (cardData) => {
+        const filterTicket = ticketData.filter(remove => remove.id !== cardData.id);
+        setTicketData(filterTicket);
+    }
+
     return (
         <div className='inter-font max-w-[1280px] mx-auto p-4 md:p-6'>
             <div className='grid grid-cols-1 md:grid-cols-3'>
@@ -12,8 +21,8 @@ const CustomerCard = ({ customerPromise }) => {
                     <h1 className='font-semibold text-2xl text-[#34485A] mb-4'>Customer Tickets</h1>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                         {
-                            customerData.map(customer =>
-                                <TicketCard customer={customer}></TicketCard>
+                            ticketData.map(customer =>
+                                <TicketCard key={customer.id}  setSelectedTask={setSelectedTask} selectedTask={selectedTask} availableProgress={availableProgress} setAvailableProgress={setAvailableProgress} customer={customer}></TicketCard>
                             )
                         }
                     </div>
@@ -27,10 +36,18 @@ const CustomerCard = ({ customerPromise }) => {
                     <div className='p-4 bg-white shadow-md rounded-[10px]'>
                         <h1 className='font-semibold text-2xl text-[#34485A] mb-4'>Task Status</h1>
 
-                        <div className='bg-[#f5f5f5] border-1 border-gray-400 rounded-[10px] p-3 mt-3'>
-                            <h1 className='font-bold mb-2'>Login Issue</h1>
-                            <button className='btn border-none font-normal w-full bg-[#02A53B] text-white'>Complete</button>
-                        </div>
+                        {
+                            selectedTask.length === 0 ? (
+                                <div className='p-5'>
+                                    <h1 className='text-center text-[#627382]'>No tasks in progress</h1>
+                                    <h1 className='text-center text-[#627382]'>Select a ticket to add to Task Status</h1>
+                                </div>
+                            ) :
+                                (
+                                    selectedTask.map(card => <TaskCard key={card.id} removeTicket={removeTicket} setResolvedTask={setResolvedTask} resolvedTask={resolvedTask} completeTask={completeTask} card={card}></TaskCard>)
+                                )
+
+                        }
 
                     </div>
 
@@ -38,13 +55,16 @@ const CustomerCard = ({ customerPromise }) => {
                     <div className='p-4 bg-white shadow-md rounded-[10px] mt-4'>
                         <h1 className='font-semibold text-2xl text-[#34485A] mb-4'>Resolved Task</h1>
 
-                        <div className='bg-green-50 border-1 border-gray-400 rounded-[10px] p-3 mt-3'>
-                            <h1 className='font-bold mb-2'>Login Issue</h1>
-                            <div className='flex justify-between items-center'>
-                                <span className='text-[#099c02] font-medium '><i className="fa-solid fa-check"></i> Completed</span>
-                                <button className='text-[14px] text-gray-600'>Click to remove</button>
-                            </div>
-                        </div>
+                        {
+                            resolvedTask.length === 0 ? (
+                                <div>
+                                    <h1 className='text-center text-[#627382]'>No resolved tasks yet.</h1>
+                                </div>
+                            ) :
+                                (
+                                    resolvedTask.map(solve => <ResolvedTask key={solve.id} removeData={removeData} solve={solve}></ResolvedTask>)
+                                )
+                        }
 
                     </div>
                 </div>

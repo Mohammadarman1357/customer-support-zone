@@ -1,15 +1,17 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
-const TicketCard = ({ customer }) => {
-    // const ticketData = use(customer)
-    // console.log(ticketData)
-    const handleTicket = (title) => {
-        console.log(title)
+const TicketCard = ({ customer, setAvailableProgress, availableProgress, selectedTask, setSelectedTask }) => {
+
+    const handleTicket = (customerData) => {
+        toast.success("In Progress!");
+        setAvailableProgress(availableProgress + 1);
+        setSelectedTask([...selectedTask, customerData]);
     }
     return (
 
 
-        <div onClick={() => { handleTicket(customer.title) }} className='bg-white p-4 rounded-[4px] col-span-1 shadow-md space-y-2'>
+        <div onClick={() => { handleTicket(customer) }} className='bg-white p-4 rounded-[4px] col-span-1 shadow-md space-y-2'>
             <div className='flex items-center justify-between'>
                 <h3>{customer.title}</h3>
                 <button className={`px-2 py-1 rounded-[400px] font-medium text-xs ${customer.status === "Open" ? "bg-[#B9F8CF]" : customer.status === "In Progress" ? "bg-[#F8F3B9]" : "bg-black"}`}>
