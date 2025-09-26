@@ -13,7 +13,7 @@ const TicketCard = ({ customer, setAvailableProgress, availableProgress, selecte
 
         <div onClick={() => { handleTicket(customer) }} className='bg-white p-4 rounded-[4px] col-span-1 shadow-md space-y-2'>
             <div className='flex items-center justify-between'>
-                <h3>{customer.title}</h3>
+                <h3 className='text-[#001931]'>{customer.title}</h3>
                 <button className={`px-2 py-1 rounded-[400px] font-medium text-xs ${customer.status === "Open" ? "bg-[#B9F8CF]" : customer.status === "In Progress" ? "bg-[#F8F3B9]" : "bg-black"}`}>
                     <span className={`${customer.status === "Open" ? "text-[#0B5E06]" : customer.status === "In Progress" ? "text-[#9C7700]" : "text-white"}`}>
                         <span className={`${customer.status === "Open" ? "text-[#02A53B] mr-1" : customer.status === "In Progress" ? "text-[#FEBB0C] mr-1" : "text-white mr-1"}`}><i className="fa-solid fa-circle"></i></span>
