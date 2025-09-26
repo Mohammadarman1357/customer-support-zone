@@ -45,7 +45,6 @@ This project is a React-based **Customer Support Zone** designed to display cust
      * show alert
      
 
-
 ### ✅ Footer 
 
 * Designed according to Figma.
@@ -58,10 +57,16 @@ This project is a React-based **Customer Support Zone** designed to display cust
 Create a README file to answer the following question-
 
  - What is JSX, and why is it used?
+ - Answer : JSX is a syntax extension for JavaScript that looks like HTML and is used in React to describe the UI.
  - What is the difference between State and Props?
+ - Answer : State is data managed within a component and can change over time; Props are read-only data passed from parent to child components.
  - What is the useState hook, and how does it work?
+ - Answer : useState is a React hook that lets you add state to functional components. It returns the state value and a function to update it.
  - How can you share state between components in React?
+ - Answer : You can share state between components by lifting state up to a common parent and passing it via props, or using Context API or state management libraries.
  - How is event handling done in React?
+ - Answer : Event handling in React is done using camelCase attributes like onClick and passing a function as the handler.
+
 
 ---
 
